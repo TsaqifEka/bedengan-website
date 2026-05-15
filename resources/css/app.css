@@ -1,0 +1,35 @@
+/* Mengimpor Tailwind v4 */
+@import "tailwindcss";
+
+/* Settingan Desain Bedengan (Warna, Font, Animasi) */
+@theme {
+  /* 1. Warna Custom */
+    --color-bedengan-dark: #0f3923;
+    --color-bedengan-primary: #22c55e;
+    --color-bedengan-light: #4ade80;
+    --color-bedengan-surface: #f0fdf4;
+
+  /* 2. Font Custom */
+    --font-sans: "Inter", sans-serif;
+    --font-serif: "Playfair Display", serif;
+
+  /* 3. Mendaftarkan Animasi Fade In Up */
+    --animate-fade-in-up: fadeInUp 0.6s ease-out forwards;
+}
+
+/* 4. Definisi Keyframes (Gerakan Animasi) */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--color-bedengan-primary);
+    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.1);
+}

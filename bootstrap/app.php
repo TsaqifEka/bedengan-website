@@ -16,3 +16,11 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withExceptions(function (Exceptions $exceptions): void {
         //
     })->create();
+
+// --- TAMBAHAN KHUSUS VERCEL ---
+if (defined('IS_VERCEL')) {
+    $app->useStoragePath('/tmp/storage');
+}
+// ------------------------------
+
+return $app; // <--

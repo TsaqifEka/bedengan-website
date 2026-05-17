@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Bedengan Camping Ground')</title>
+    <meta name="description" content="Sewa lahan camping dan peralatan outdoor terlengkap di Bumi Perkemahan Bedengan Malang. Booking tiket online sekarang dengan mudah dan aman.">
     @vite('resources/css/app.css')
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
